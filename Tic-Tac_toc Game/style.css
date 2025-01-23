@@ -1,0 +1,101 @@
+h1 {
+    font-family: 'Roboto', sans-serif; /* Modern and clean font */
+    font-size: 3em; /* Large size for emphasis */
+    font-weight: 700; /* Bold weight */
+    color: #333; /* Dark grey color for good readability */
+    text-align: center; /* Center align for symmetry */
+    margin: 20px 0; /* Vertical spacing */
+    line-height: 1.2; /* Improved readability */
+    letter-spacing: 0.05em; /* Slightly increased letter spacing */
+    text-transform: uppercase; /* Uppercase for strong impact */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+  
+@media (max-width: 768px) {
+    h1 {
+      font-size: 2.5em; /* Responsive size for tablets */
+    }
+}
+  
+@media (max-width: 480px) {
+    h1 {
+      font-size: 2em; /* Responsive size for mobile devices */
+    }
+}
+  
+body {
+    background-color:  #1d7874;
+    text-align: center ;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 0.5rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .5s cubic-bezier(0.4, 0, 0.3, 1.5), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-shadow:0 0 1rem rgb(0, 0, 0,0.4) ;
+    font-size: 9vmin;
+    color: #b0413e;
+    background-color:#679289 ;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+  
+
+
+#reset{
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    background-color: #191913;
+    color: white;
+    font-weight: bold;
+}
+.newGame {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    background-color: #191913;
+    color: white;
+    font-weight: bold;
+}
+.msgcontainer{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+#msg{
+    font-size: 8vmin;
+    color: #f4d58d;
+}
+.hide{
+    display: none;
+}
