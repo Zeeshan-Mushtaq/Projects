@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: 'Roboto', sans-serif; /* Modern and clean font */
+    font-size: 3em; /* Large size for emphasis */
+    font-weight: 700; /* Bold weight */
+    color: #333; /* Dark grey color for good readability */
+    text-align: center; /* Center align for symmetry */
+    margin: 20px 0; /* Vertical spacing */
+    line-height: 1.2; /* Improved readability */
+    letter-spacing: 0.05em; /* Slightly increased letter spacing */
+    text-transform: uppercase; /* Uppercase for strong impact */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+  
+.choice {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .choice:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow:0 0 1rem rgb(0, 0, 0,0.4) ;
+    transition: transform 1.0s cubic-bezier(0.4, 0.5, 0.3, 1.5), box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, .1);
+    cursor: pointer;
+    background-color: #081b31;
+  }
+  
+  img {
+    height: 152px;
+    width: 152px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+  }
+  
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 4rem;
+  }
+  
+  .msg-container {
+    margin-top: 5rem;
+    display: inline-block;
+  }
+  
+  #msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+#draw{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  #reset-score{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: block;
+    margin: 20px auto;
+    border: none;
+  }
+  #reset-score:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+    transition: transform 1.0s cubic-bezier(0.4, 0.5, 0.3, 1.5), box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, .1);
+
+  }
